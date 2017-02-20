@@ -1,0 +1,517 @@
+[ 2016-11-19T15:35:07+08:00 ] 192.168.0.104 /demo/index.php/App/login?phone_data=15303121252&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.074707s ]
+INFO: [ route_check ] --END-- [ RunTime:0.075169s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.017498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017603s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.069694s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121252' ) LIMIT 1   [ RunTime:0.001264s ]
+
+[ 2016-11-19T15:35:17+08:00 ] 192.168.0.104 /demo/index.php/App/login?phone_data=13576967557&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002215s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002903s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001615s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002972s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001012s ]
+
+[ 2016-11-19T15:35:17+08:00 ] 192.168.0.104 /demo/index.php/App/get_user_info?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001158s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004574s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000966s ]
+
+[ 2016-11-19T15:36:06+08:00 ] 192.168.0.104 /demo/index.php/App/get_user_info?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001150s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002500s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000841s ]
+
+[ 2016-11-19T15:36:39+08:00 ] 192.168.0.104 /demo/index.php/App/login?phone_data=13576967557&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005473s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000884s ]
+
+[ 2016-11-19T15:36:39+08:00 ] 192.168.0.104 /demo/index.php/App/get_user_info?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001108s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002691s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000715s ]
+
+[ 2016-11-19T15:50:54+08:00 ] 192.168.0.104 /demo/index.php/App/mod_password?phone_data=13576967557&password=666
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002307s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002633s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+NOTIC: [8] Undefined index:  phone D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004198s ]
+SQL: UPDATE `user` SET `password`='fae0b27c451c728867a567e8c1bb4e53' WHERE ( `phone`='' ) [ RunTime:0.001459s ]
+
+[ 2016-11-19T15:51:10+08:00 ] 192.168.0.104 /demo/index.php/App/mod_password?phone=13576967557&password=666
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001796s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002113s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003044s ]
+SQL: UPDATE `user` SET `phone`='13576967557',`password`='fae0b27c451c728867a567e8c1bb4e53' WHERE ( `phone`='13576967557' ) [ RunTime:0.000870s ]
+
+[ 2016-11-19T16:16:14+08:00 ] 192.168.0.104 /demo/index.php/App/add_address?login_phone=13576967557&name=maliang&phone=15303121252&city=hangz&address=hangz&post=maliang
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002300s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.004125s ]
+SQL: INSERT INTO `address` (`login_phone`,`name`,`phone`,`city`,`address`,`post`) VALUES ('13576967557','maliang','15303121252','hangz','hangz','maliang') [ RunTime:0.000613s ]
+
+[ 2016-11-19T16:57:18+08:00 ] 192.168.0.104 /demo/index.php/App/get_address
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002740s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003050s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006975s ]
+ERR: 非法操作:get_address
+
+[ 2016-11-19T16:57:18+08:00 ] 192.168.0.104 /demo/index.php/App/get_address
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003355s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003470s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002859s ]
+ERR: 非法操作:get_address
+
+[ 2016-11-19T16:57:34+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005786s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006041s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003118s ]
+ERR: 非法操作:get_address
+
+[ 2016-11-19T16:57:34+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001231s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+ERR: 非法操作:get_address
+
+[ 2016-11-19T16:57:46+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001331s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001484s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+ERR: 非法操作:get_address
+
+[ 2016-11-19T16:57:47+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003342s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003460s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002511s ]
+ERR: 非法操作:get_address
+
+[ 2016-11-19T17:00:56+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003521s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003685s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002281s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002882s ]
+SQL: SELECT * FROM `user` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000277s ]
+ERR: 1054:Unknown column 'login_phone' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `login_phone`='13576967557' ) 
+
+[ 2016-11-19T17:01:30+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003621s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003761s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006105s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.005783s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000867s ]
+
+[ 2016-11-19T17:02:11+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004111s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004270s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003451s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000897s ]
+
+[ 2016-11-19T17:02:11+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001568s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001662s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002343s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002643s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000719s ]
+
+[ 2016-11-19T17:03:39+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002288s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002496s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002112s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002457s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000634s ]
+
+[ 2016-11-19T17:03:49+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000844s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002712s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000796s ]
+
+[ 2016-11-19T17:04:15+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001650s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002909s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.003091s ]
+
+[ 2016-11-19T17:04:44+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001277s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.004181s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.001348s ]
+
+[ 2016-11-19T17:05:10+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000855s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002520s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000658s ]
+
+[ 2016-11-19T17:05:41+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002356s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002822s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002675s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000584s ]
+
+[ 2016-11-19T17:08:05+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002153s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002278s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003483s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.003625s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000728s ]
+
+[ 2016-11-19T17:08:20+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001160s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.003108s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.001039s ]
+
+[ 2016-11-19T17:08:20+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003283s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003235s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002240s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000622s ]
+
+[ 2016-11-19T17:09:24+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003125s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003259s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003449s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002333s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000642s ]
+
+[ 2016-11-19T17:09:24+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001492s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.001987s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000540s ]
+
+[ 2016-11-19T17:09:55+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001497s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001688s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002259s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000807s ]
+
+[ 2016-11-19T17:09:55+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002364s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002470s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002715s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.003113s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000916s ]
+
+[ 2016-11-19T17:10:12+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003558s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003708s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002627s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.003075s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000832s ]
+
+[ 2016-11-19T17:10:12+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002438s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002103s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.001122s ]
+
+[ 2016-11-19T17:11:11+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001569s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001862s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.003802s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000890s ]
+
+[ 2016-11-19T17:11:11+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003524s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003726s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003516s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002967s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.001121s ]
+
+[ 2016-11-19T17:13:30+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002484s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002583s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002156s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000522s ]
+
+[ 2016-11-19T17:13:59+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002206s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002301s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001911s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002289s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000520s ]
+
+[ 2016-11-19T17:14:40+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004777s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004961s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002662s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002531s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000586s ]
+
+[ 2016-11-19T17:14:49+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002537s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002667s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003093s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002454s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000627s ]
+
+[ 2016-11-19T17:14:49+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001598s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001702s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002015s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002975s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000998s ]
+
+[ 2016-11-19T17:14:55+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010007s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005713s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002272s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000760s ]
+
+[ 2016-11-19T17:15:02+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005713s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004589s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002623s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000817s ]
+
+[ 2016-11-19T17:15:05+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002706s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002817s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003581s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.003008s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000720s ]
+
+[ 2016-11-19T17:15:10+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001089s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.006177s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000958s ]
+
+[ 2016-11-19T17:15:59+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001311s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001464s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002738s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000651s ]
+
+[ 2016-11-19T17:15:59+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005129s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005337s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003593s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002706s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000961s ]
+
+[ 2016-11-19T17:16:37+08:00 ] 192.168.0.104 /demo/index.php/App/add_address?login_phone=13576967557&name=%E9%A9%AC%E8%89%AF&phone=13053582566&city=%E6%9D%AD%E5%B7%9E&address=%E5%BE%B7%E8%83%9C&post=%E9%A9%AC%E8%89%AF
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006958s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007332s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003048s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.005066s ]
+SQL: INSERT INTO `address` (`login_phone`,`name`,`phone`,`city`,`address`,`post`,`time`) VALUES ('13576967557','马良','13053582566','杭州','德胜','马良',1479546997) [ RunTime:0.003567s ]
+
+[ 2016-11-19T17:16:38+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004274s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004410s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003820s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002509s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000868s ]
+
+[ 2016-11-19T17:16:52+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002404s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002534s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008868s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002639s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='' )  [ RunTime:0.000749s ]
+
+[ 2016-11-19T17:16:52+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004080s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004608s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002004s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002532s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' )  [ RunTime:0.000910s ]
+
+[ 2016-11-19T17:18:11+08:00 ] 192.168.0.104 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001330s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002678s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' ) ORDER BY id desc  [ RunTime:0.000673s ]
+

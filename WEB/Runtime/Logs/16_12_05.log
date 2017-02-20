@@ -1,0 +1,35 @@
+[ 2016-12-05T14:29:18+08:00 ] 192.168.1.62 /demo/index.php/App/get_topic
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003208s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.043486s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc  [ RunTime:0.002151s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.033964s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.002696s ]
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 115 行.
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000334s ]
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 115 行.
+
+[ 2016-12-05T14:29:24+08:00 ] 192.168.1.62 /demo/index.php/App/get_index_item
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000894s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.115302s ]
+SQL: SELECT * FROM `items` ORDER BY id desc  [ RunTime:0.030369s ]
+
+[ 2016-12-05T14:30:58+08:00 ] 192.168.1.62 /demo/index.php/App/get_index_item
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001705s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.012544s ]
+SQL: SELECT * FROM `items` ORDER BY id desc  [ RunTime:0.001879s ]
+

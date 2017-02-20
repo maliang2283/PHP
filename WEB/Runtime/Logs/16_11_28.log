@@ -1,0 +1,281 @@
+[ 2016-11-28T10:38:51+08:00 ] 192.168.1.62 /demo/index.php/App/get_index_item
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.034243s ]
+INFO: [ route_check ] --END-- [ RunTime:0.034408s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.148410s ]
+SQL: SELECT * FROM `items` ORDER BY id desc  [ RunTime:0.038043s ]
+
+[ 2016-11-28T10:39:01+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000865s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.077371s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.285180s ]
+
+[ 2016-11-28T10:39:04+08:00 ] 192.168.1.62 /demo/index.php/App/get_topic
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000831s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.081541s ]
+SQL: SELECT * FROM `topic` ORDER BY id desc  [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004848s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.002555s ]
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 115 行.
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000842s ]
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 115 行.
+
+[ 2016-11-28T10:39:12+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001695s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001843s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.002917s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.090543s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.115266s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.038216s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003069s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001314s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000513s ]
+
+[ 2016-11-28T10:39:43+08:00 ] 192.168.1.62 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001143s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.074030s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' ) ORDER BY id desc  [ RunTime:0.001654s ]
+
+[ 2016-11-28T10:40:07+08:00 ] 192.168.1.62 /demo/index.php/App/get_address?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001130s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `address` [ RunTime:0.002836s ]
+SQL: SELECT * FROM `address` WHERE ( `login_phone`='13576967557' ) ORDER BY id desc  [ RunTime:0.001758s ]
+
+[ 2016-11-28T10:42:30+08:00 ] 127.0.0.1 /demo/index.php/Index/say
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001559s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001663s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+
+[ 2016-11-28T10:44:55+08:00 ] 192.168.1.62 /demo/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002032s ]
+
+[ 2016-11-28T10:44:55+08:00 ] 192.168.1.62 /demo/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+
+[ 2016-11-28T10:56:23+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.008398s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008527s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002551s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.005297s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.003215s ]
+
+[ 2016-11-28T10:56:23+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002593s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.003082s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.001164s ]
+
+[ 2016-11-28T10:56:41+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003683s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003947s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008192s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.005650s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.001528s ]
+
+[ 2016-11-28T10:56:41+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003154s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003439s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003066s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.005692s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.003544s ]
+
+[ 2016-11-28T10:56:54+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009349s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009536s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004342s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.004867s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.001995s ]
+
+[ 2016-11-28T10:56:54+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.012615s ]
+INFO: [ route_check ] --END-- [ RunTime:0.012756s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006359s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.005514s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.002861s ]
+
+[ 2016-11-28T11:01:45+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007540s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007709s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008932s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.005615s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.002518s ]
+
+[ 2016-11-28T11:01:46+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004488s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004669s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009674s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.002762s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.002635s ]
+
+[ 2016-11-28T11:02:05+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006998s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007281s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008294s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.004564s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.001995s ]
+
+[ 2016-11-28T11:02:06+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001837s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001946s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001689s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.005007s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.001964s ]
+
+[ 2016-11-28T11:02:37+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003085s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003249s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006275s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.003172s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.001598s ]
+
+[ 2016-11-28T11:02:38+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004679s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006567s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.006845s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.002921s ]
+
+[ 2016-11-28T11:02:44+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005263s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005518s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002818s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.003709s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.001572s ]
+
+[ 2016-11-28T11:02:45+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006847s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007006s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008510s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.007590s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.002604s ]
+
+[ 2016-11-28T11:47:27+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007119s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005872s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.005925s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.002036s ]
+
+[ 2016-11-28T11:47:28+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003024s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003150s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002371s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.005927s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.001764s ]
+
+[ 2016-11-28T13:48:41+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002651s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002798s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002478s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.004908s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.001871s ]
+
+[ 2016-11-28T13:48:42+08:00 ] 192.168.1.62 /demo/index.php/App/get_shop
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002383s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002506s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002025s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.003936s ]
+SQL: SELECT * FROM `items`  [ RunTime:0.002973s ]
+
+[ 2016-11-28T13:57:42+08:00 ] 192.168.1.62 /demo/index.php/App/get_index_item
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002762s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002901s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002982s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.004777s ]
+SQL: SELECT * FROM `items` ORDER BY id desc  [ RunTime:0.001375s ]
+

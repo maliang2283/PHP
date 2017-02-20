@@ -1,0 +1,31 @@
+[ 2017-01-06T09:54:21+08:00 ] 127.0.0.1 /demo/index.php/Index/say
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006674s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007039s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005757s ]
+
+[ 2017-01-06T09:54:34+08:00 ] 127.0.0.1 /demo/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+
+[ 2017-01-06T14:12:02+08:00 ] 127.0.0.1 /demo/index.php/Index/say
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001304s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+
+[ 2017-01-06T15:42:22+08:00 ] 127.0.0.1 /demo/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002466s ]
+
+[ 2017-01-06T15:43:11+08:00 ] 127.0.0.1 /demo/index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+

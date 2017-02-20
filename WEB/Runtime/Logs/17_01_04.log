@@ -1,0 +1,5 @@
+[ 2017-01-04T14:41:24+08:00 ] 127.0.0.1 /demo/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005164s ]
+

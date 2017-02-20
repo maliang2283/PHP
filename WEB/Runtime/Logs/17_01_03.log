@@ -1,0 +1,8 @@
+[ 2017-01-03T10:03:53+08:00 ] 127.0.0.1 /demo/index.php/Index/say
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002436s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002558s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+

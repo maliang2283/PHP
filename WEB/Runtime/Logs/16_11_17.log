@@ -1,0 +1,448 @@
+[ 2016-11-17T09:37:51+08:00 ] 192.168.1.62 /demo/index.php/App/register?phone_data=13078945612&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005987s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006420s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003905s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.118778s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13078945612' ) LIMIT 1   [ RunTime:0.001569s ]
+SQL: INSERT INTO `user` (`phone`,`password`) VALUES ('13078945612','202cb962ac59075b964b07152d234b70') [ RunTime:0.000723s ]
+
+[ 2016-11-17T09:37:52+08:00 ] 192.168.1.62 /demo/index.php/App/register?phone_data=13078945612&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001499s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001670s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002833s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003021s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13078945612' ) LIMIT 1   [ RunTime:0.002190s ]
+
+[ 2016-11-17T09:37:52+08:00 ] 192.168.1.62 /demo/index.php/App/register?phone_data=13078945612&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000861s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006469s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13078945612' ) LIMIT 1   [ RunTime:0.001410s ]
+
+[ 2016-11-17T09:37:52+08:00 ] 192.168.1.62 /demo/index.php/App/register?phone_data=13078945612&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001453s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002228s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004465s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13078945612' ) LIMIT 1   [ RunTime:0.000950s ]
+
+[ 2016-11-17T09:39:22+08:00 ] 192.168.1.62 /demo/index.php/App/register?phone_data=12345678912&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001004s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005274s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='12345678912' ) LIMIT 1   [ RunTime:0.001770s ]
+SQL: INSERT INTO `user` (`phone`,`password`) VALUES ('12345678912','c4ca4238a0b923820dcc509a6f75849b') [ RunTime:0.000443s ]
+
+[ 2016-11-17T09:41:36+08:00 ] 192.168.1.62 /demo/index.php/App/register?phone_data=98765432132&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003668s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003816s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005178s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005277s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.001479s ]
+SQL: INSERT INTO `user` (`phone`,`password`) VALUES ('98765432132','c4ca4238a0b923820dcc509a6f75849b') [ RunTime:0.000580s ]
+
+[ 2016-11-17T10:21:51+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002647s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002961s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001939s ]
+ERR: 非法操作:get_user_info
+
+[ 2016-11-17T10:28:27+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001808s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001929s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002393s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002872s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000557s ]
+
+[ 2016-11-17T10:28:40+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000845s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002408s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.001344s ]
+
+[ 2016-11-17T10:36:51+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002150s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002295s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002247s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002519s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000870s ]
+
+[ 2016-11-17T10:42:25+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007905s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008273s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002517s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002933s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000870s ]
+
+[ 2016-11-17T10:42:26+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004014s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004442s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003748s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003730s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.001003s ]
+
+[ 2016-11-17T10:45:50+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003803s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004113s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004536s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000956s ]
+
+[ 2016-11-17T10:47:15+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000906s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002328s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000802s ]
+
+[ 2016-11-17T10:47:21+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001537s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001905s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003132s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.003552s ]
+
+[ 2016-11-17T10:47:22+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002178s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000908s ]
+
+[ 2016-11-17T10:47:32+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001328s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003153s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.001139s ]
+
+[ 2016-11-17T10:48:08+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002587s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002706s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000868s ]
+
+[ 2016-11-17T10:48:59+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001509s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001666s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005190s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.001023s ]
+
+[ 2016-11-17T10:53:30+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003720s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003887s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001831s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004601s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.001027s ]
+
+[ 2016-11-17T11:05:56+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001684s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001799s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002689s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.001203s ]
+
+[ 2016-11-17T11:09:59+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002601s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002750s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004879s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002148s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000860s ]
+
+[ 2016-11-17T11:11:56+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006082s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006570s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006601s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.001025s ]
+
+[ 2016-11-17T11:12:22+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002089s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002228s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004736s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004780s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000763s ]
+
+[ 2016-11-17T11:12:22+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002015s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002318s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002052s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000803s ]
+
+[ 2016-11-17T11:20:43+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002352s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002480s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007186s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.001099s ]
+
+[ 2016-11-17T11:21:14+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=98765432132
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001346s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005792s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='98765432132' ) LIMIT 1   [ RunTime:0.000728s ]
+
+[ 2016-11-17T11:26:41+08:00 ] 192.168.1.62 /demo/index.php/App/register?phone_data=15303121251&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003781s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005008s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004066s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121251' ) LIMIT 1   [ RunTime:0.000799s ]
+SQL: INSERT INTO `user` (`phone`,`password`) VALUES ('15303121251','c4ca4238a0b923820dcc509a6f75849b') [ RunTime:0.000366s ]
+
+[ 2016-11-17T11:26:42+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=15303121251
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003051s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003174s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007595s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002706s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121251' ) LIMIT 1   [ RunTime:0.003800s ]
+
+[ 2016-11-17T11:27:05+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=15303121251
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002519s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002638s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004035s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002223s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121251' ) LIMIT 1   [ RunTime:0.000801s ]
+
+[ 2016-11-17T11:27:39+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=15303121251
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005244s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005650s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003151s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004869s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121251' ) LIMIT 1   [ RunTime:0.001947s ]
+
+[ 2016-11-17T11:27:43+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=15303121251
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009052s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009192s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009846s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005835s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121251' ) LIMIT 1   [ RunTime:0.000905s ]
+
+[ 2016-11-17T11:27:56+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=15303121251
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006226s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006370s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006108s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003080s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121251' ) LIMIT 1   [ RunTime:0.001129s ]
+
+[ 2016-11-17T11:28:08+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=15303121251
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003738s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003927s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002039s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004993s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121251' ) LIMIT 1   [ RunTime:0.002379s ]
+
+[ 2016-11-17T11:28:13+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=15303121251
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003386s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003523s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003368s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002999s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121251' ) LIMIT 1   [ RunTime:0.003176s ]
+
+[ 2016-11-17T11:28:20+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=15303121251
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004213s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004370s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004412s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005648s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121251' ) LIMIT 1   [ RunTime:0.000834s ]
+
+[ 2016-11-17T12:53:47+08:00 ] 127.0.0.1 /demo/index.php/Index/say
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001734s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001964s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+
+[ 2016-11-17T12:53:56+08:00 ] 127.0.0.1 /demo/index.php/App/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+ERR: 非法操作:index
+
+[ 2016-11-17T12:54:06+08:00 ] 127.0.0.1 /demo/index.php/App/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001582s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+
+[ 2016-11-17T13:07:28+08:00 ] 192.168.1.62 /demo/index.php/App/login?phone_data=15303121252&password_data=11111
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001457s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005406s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121252' ) LIMIT 1   [ RunTime:0.000873s ]
+
+[ 2016-11-17T13:07:57+08:00 ] 192.168.1.62 /demo/index.php/App/login?phone_data=13576967557&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000881s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004329s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001375s ]
+
+[ 2016-11-17T13:08:00+08:00 ] 192.168.1.62 /demo/index.php/App/login?phone_data=13576967557&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000783s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002202s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000756s ]
+
+[ 2016-11-17T13:16:51+08:00 ] 192.168.1.62 /demo/index.php/App/login?phone_data=15303121252&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002702s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002877s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003928s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='15303121252' ) LIMIT 1   [ RunTime:0.000776s ]
+
+[ 2016-11-17T13:17:01+08:00 ] 192.168.1.62 /demo/index.php/App/login?phone_data=13576967557&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001113s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002609s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.002183s ]
+
+[ 2016-11-17T13:17:01+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001210s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001353s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002529s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001234s ]
+

@@ -1,0 +1,729 @@
+[ 2016-11-23T09:12:04+08:00 ] 192.168.1.62 /demo/index.php/App/get_index_item
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003520s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004521s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001855s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.035921s ]
+SQL: SELECT * FROM `items` ORDER BY id desc  [ RunTime:0.002151s ]
+
+[ 2016-11-23T09:26:33+08:00 ] 192.168.1.62 /demo/index.php/App/login?phone_data=13576967557&password_data=666
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001799s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001947s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.072410s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.028221s ]
+
+[ 2016-11-23T09:26:34+08:00 ] 192.168.1.62 /demo/index.php/App/get_user_info?phone=13576967557
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001157s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.014655s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000924s ]
+
+[ 2016-11-23T09:26:47+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002237s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002391s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001783s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.019011s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.017300s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.058192s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.002462s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.015762s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001563s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000448s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000403s ]
+
+[ 2016-11-23T09:28:10+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001611s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001802s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.013827s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001624s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.015078s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001659s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.018912s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001831s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000466s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000573s ]
+
+[ 2016-11-23T09:28:44+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001382s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001549s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.016754s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.002070s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.017084s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001589s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.023140s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.002272s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000615s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000632s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001864s ]
+
+[ 2016-11-23T09:29:06+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001958s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002397s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.018095s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.002023s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.014463s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001857s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:30:03+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001209s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.019254s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001489s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.016443s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001488s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:30:05+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001009s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.013525s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.010245s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001408s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:30:36+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001015s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.013456s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.014719s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001069s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:31:42+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001374s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001484s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.010761s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.013596s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001130s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:32:07+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002433s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002672s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.023375s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.004510s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.019845s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.002597s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:32:39+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002869s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003390s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.030595s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.002275s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.025478s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.002985s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:34:01+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001565s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001703s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002098s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.016409s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.018212s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001362s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:34:01+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001796s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001969s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002096s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.011792s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.016801s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001557s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:34:55+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001769s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001977s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.022873s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.002087s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.023163s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.002294s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:35:16+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001064s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.014264s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001478s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.016445s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.002292s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:35:16+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000919s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.015096s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.012180s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001118s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:35:24+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000838s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.015094s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.012083s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.013467s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001187s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001043s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000248s ]
+
+[ 2016-11-23T09:35:30+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001693s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.018275s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001676s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.017544s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001327s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:35:31+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001747s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.016030s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001371s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.011387s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011178s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.002292s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001216s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000322s ]
+
+[ 2016-11-23T09:37:57+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002032s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002175s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006886s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.015816s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001460s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.018066s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001534s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T09:37:58+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001395s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001506s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.014063s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.011282s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.015010s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001525s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000428s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000331s ]
+
+[ 2016-11-23T10:00:51+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001954s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002119s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001737s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.014582s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.012668s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001342s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:01:15+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001458s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001767s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.009184s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.009433s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.002028s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:01:27+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001312s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.015531s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001667s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.016419s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001584s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.015441s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001450s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000476s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000402s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000386s ]
+
+[ 2016-11-23T10:09:52+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002126s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002283s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002485s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.013291s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.009884s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001353s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:09:53+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001376s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.010550s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.009964s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012609s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001223s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000399s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000508s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000440s ]
+
+[ 2016-11-23T10:10:09+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001429s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001598s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.013928s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.013733s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001226s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:10:11+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000922s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.010995s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.002252s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.011849s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009910s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001262s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000226s ]
+
+[ 2016-11-23T10:10:52+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001384s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001571s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.011427s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001170s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.016937s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001307s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:10:52+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000993s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.012891s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.009572s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001472s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011954s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001170s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000570s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000703s ]
+
+[ 2016-11-23T10:12:39+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001314s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.008715s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.011379s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001140s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:13:15+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000925s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.013771s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001422s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.026541s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001574s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:13:33+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000875s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.014429s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.012549s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001154s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:13:36+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001994s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002272s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.014144s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.010439s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011087s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.002664s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000565s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000298s ]
+
+[ 2016-11-23T10:13:47+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002271s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002584s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.014678s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.016266s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001233s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:13:47+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.016327s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.014501s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001365s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.016544s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001132s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001868s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000363s ]
+
+[ 2016-11-23T10:13:58+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002440s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002719s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.021470s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.030783s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001339s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:13:59+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001237s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.015448s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.011809s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001830s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.021777s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001741s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.002726s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000341s ]
+
+[ 2016-11-23T10:14:32+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001506s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001677s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003633s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.019236s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.012109s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.002887s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:14:33+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.010846s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.009508s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001121s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.014546s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001175s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000421s ]
+
+[ 2016-11-23T10:14:44+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002747s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003057s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.083224s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001442s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.015282s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001237s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:14:58+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002693s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002956s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.011697s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.003710s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.009632s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010080s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001301s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000250s ]
+
+[ 2016-11-23T10:16:31+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003035s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003209s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.013354s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.018156s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001161s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:16:31+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001849s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001988s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.011515s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='2' ) LIMIT 1   [ RunTime:0.003683s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.011793s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='2' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011081s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001336s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000407s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000614s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000619s ]
+
+[ 2016-11-23T10:16:44+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000815s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.010904s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001861s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.010350s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001481s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:16:51+08:00 ] 192.168.1.62 /demo/index.php/App/add_comd?phone=13576967557&content=123123&item_id=1&num=5
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003048s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003365s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.014491s ]
+SQL: INSERT INTO `com` (`phone`,`content`,`item_id`,`num`,`time`) VALUES ('13576967557','123123','1','5',1479867411) [ RunTime:0.058881s ]
+
+[ 2016-11-23T10:16:52+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000845s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.009960s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='1' ) LIMIT 1   [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.009172s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='1' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001147s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.013177s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.001298s ]
+
+[ 2016-11-23T10:17:25+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003198s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003392s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.024741s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001354s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.025829s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001245s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:17:30+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001290s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.021364s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001627s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.019499s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001303s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+
+[ 2016-11-23T10:17:55+08:00 ] 192.168.1.62 /demo/index.php/App/get_item?id=null
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001229s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.027658s ]
+SQL: SELECT * FROM `items` WHERE ( `id`='null' ) LIMIT 1   [ RunTime:0.001441s ]
+SQL: SHOW COLUMNS FROM `com` [ RunTime:0.046538s ]
+SQL: SELECT * FROM `com` WHERE ( `item_id`='null' ) ORDER BY id desc LIMIT 10   [ RunTime:0.001595s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpserv\AppServ\www\demo\WEB\Lib\Action\AppAction.class.php 第 130 行.
+

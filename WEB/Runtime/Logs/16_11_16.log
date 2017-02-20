@@ -1,0 +1,68 @@
+[ 2016-11-16T11:39:34+08:00 ] 127.0.0.1 /demo/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002060s ]
+
+[ 2016-11-16T13:09:25+08:00 ] 127.0.0.1 /demo/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002479s ]
+
+[ 2016-11-16T13:09:28+08:00 ] 127.0.0.1 /demo/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002031s ]
+
+[ 2016-11-16T13:09:41+08:00 ] 127.0.0.1 /demo/index.php/Index/say
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.028609s ]
+INFO: [ route_check ] --END-- [ RunTime:0.028723s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001957s ]
+
+[ 2016-11-16T13:10:00+08:00 ] 127.0.0.1 /demo/index.php/App/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002244s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002340s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002172s ]
+
+[ 2016-11-16T13:10:08+08:00 ] 127.0.0.1 /demo/index.php/App/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001706s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001811s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+
+[ 2016-11-16T13:13:57+08:00 ] 192.168.1.62 /demo/index.php/App/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002300s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002404s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-16T13:24:15+08:00 ] 192.168.1.62 /demo/index.php/App/register?phone_data=15303121252&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001739s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001841s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005178s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006342s ]
+SQL: INSERT INTO `user` (`phone`) VALUES ('15303121252') [ RunTime:0.003454s ]
+
+[ 2016-11-16T13:38:13+08:00 ] 192.168.1.62 /demo/index.php/App/register?phone_data=13576967557&password_data=123
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001522s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001613s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002205s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005721s ]
+SQL: SELECT * FROM `user` WHERE ( `phone`='13576967557' ) LIMIT 1   [ RunTime:0.000587s ]
+SQL: INSERT INTO `user` (`phone`,`password`) VALUES ('13576967557','202cb962ac59075b964b07152d234b70') [ RunTime:0.000371s ]
+
